@@ -81,6 +81,14 @@ yargs.command({
     }
 });
 
+// Createc dummy read
+yargs.dummy({
+    command: 'read',
+    describe: 'read note',
+    handler: () => {
+        console.log('read note');
+    }
+});
 yargs.parse();
 //console.log(yargs.argv);
 
